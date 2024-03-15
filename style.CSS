@@ -9,4 +9,49 @@
 
 section{
     padding-top: 5rem;
+  }
+  
+  .nav-link{
+    position: relative;
+  }
+  .nav-link:hover{
+    /* text-decoration: underline; */
+    /* border-bottom: 2px solid greenyellow; */
+  }
+  
+  .nav-link::after{
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: greenyellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+ .nav-link:hover::after{
+  opacity: 1;
+ }
+
+<style>
+  body{
+    margin: 3em
+  }
+  .card:hover{
+    border-color:#ffffff;
+    box-shadow: 0 0 10px #ffffff;
+  }
+  .card{
+    trasnsition: box-shadow .5s, border-color 1s;
+  }
+</style>
+
+.card{
+  transition: all 0.3s;
+}
+
+.card:hover{
+  transform: scale(1.06);
 }
